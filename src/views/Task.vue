@@ -15,7 +15,7 @@
         <input type="checkbox" name="done" id="done" v-model="form.done" class="transform scale-150" :checked="form.done">
       </div>
 
-      <button type="submit" class="border-2 border-blue-600 bg-green-400 text-white px-10 py-3 rounded-full hover:bg-green-600" :disabled="form.body.length === 0">Modifier la tache</button>
+      <button type="submit" class="border-2 border-blue-600 bg-green-400 text-white px-10 py-3 rounded-full hover:bg-green-600" :disabled="form.body === ''">Modifier la tache</button>
   </form>
 </div>
 
@@ -30,7 +30,7 @@
       <input type="text" name="body" id="body" v-model="form.body" class="border-b-2 border-black mb-2 focus:outline-none bg-white" autofocus>
     </div>
 
-    <button type="submit" class="border-2 border-blue-600 bg-green-400 text-white px-10 py-3 rounded-full hover:bg-green-600" :disabled="form.body.length === 0">Crée une nouvelle tache</button>
+    <button type="submit" class="border-2 border-blue-600 bg-green-400 text-white px-10 py-3 rounded-full hover:bg-green-600" :disabled="form.body === ''">Crée une nouvelle tache</button>
   </form>
 </div>
 </template>
