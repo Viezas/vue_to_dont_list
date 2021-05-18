@@ -1,0 +1,22 @@
+{
+  "short_name": "To Don't List",
+  "name": "To Don't List",
+  "icons": [
+    {
+      "src": "/img/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "description": "Definitively not a To Do List, rather a to do not list"
+}
