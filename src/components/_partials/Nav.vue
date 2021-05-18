@@ -44,7 +44,7 @@ export default {
           'Content-Type': 'application/json'
         },
       }
-      fetch("http://127.0.0.1:8000/api/auth/logout", init)
+      fetch("https://to-dont-api.herokuapp.com/api/auth/logout", init)
       .catch(error => {console.log('error : ', error)})
 
       this.clearState()

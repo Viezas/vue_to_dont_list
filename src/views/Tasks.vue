@@ -95,7 +95,7 @@ export default {
           'Content-Type': 'application/json'
         },  
       }
-      fetch(`http://127.0.0.1:8000/api/tasks/${task.id}`, init)
+      fetch(`https://to-dont-api.herokuapp.com/api/tasks/${task.id}`, init)
       .then(response => response.json())
       .then(data => {
         if (data.success) {

@@ -82,7 +82,7 @@ export default {
         body : JSON.stringify(this.form)
       }
 
-      fetch("http://127.0.0.1:8000/api/tasks", init)
+      fetch("https://to-dont-api.herokuapp.com/api/tasks", init)
       .then(response => response.json())
       .then(data => {
         if (data.success) {
@@ -103,7 +103,7 @@ export default {
         body : JSON.stringify(this.form)
       }
 
-      fetch(`http://127.0.0.1:8000/api/tasks/${id}`, init)
+      fetch(`https://to-dont-api.herokuapp.com/api/tasks/${id}`, init)
       .then(response => response.json())
       .then(data => {
         if (data.success) {

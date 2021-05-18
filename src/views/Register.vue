@@ -59,7 +59,7 @@ export default {
         body : JSON.stringify(this.form)
       }
 
-      fetch("http://127.0.0.1:8000/api/auth/signin", init)
+      fetch("https://to-dont-api.herokuapp.com/api/auth/signin", init)
       .then(response => response.json())
       .then(data => {
         if (data.error){
