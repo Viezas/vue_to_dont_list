@@ -13,7 +13,7 @@ export const fillTasks = ({commit}) => {
       'Content-Type': 'application/json'
     },
   }
-  fetch("http://127.0.0.1:8000/api/tasks", init)
+  fetch("https://to-dont-api.herokuapp.com/api/tasks", init)
   .then(response => response.json())
   .then(data => {
     commit('fillTasks', data)
